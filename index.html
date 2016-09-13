@@ -37,25 +37,69 @@
       <!-- @JOEP: Hier kun je de volgorde en de urls aanpassen/invoeren -->
       <div class="row">
         <div class="col-lg-2">
-          <a href="https://3di.lizard.net/"><img class="img-circle" src="assets/3di.png" alt="3Di" width="140" height="140"></a>
+          <a
+            data-container="body"
+            data-toggle="popover"
+            data-placement="bottom"
+            data-trigger="hover"
+            data-content=" 3Di waterbeheer omvat een instrumentarium, waarmee integraal en op hoog detail aan water wordt gerekend. Met dit modelinstrument wordt wateroverlastproblematiek in het stedelijk gebied voor extreme neerslaggebeurtenissen gesimuleerd, gevisualiseerd en gecommuniceerd. "
+            href="https://3di.lizard.net/">
+            <img class="img-circle" src="assets/3di.png" alt="3Di" width="140" height="140">
+          </a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-2">
-          <a href="http://kpi.sandbox.lizard.net/#/"><img class="img-circle" src="assets/kpi.png" alt="KPI" width="140" height="140"></a>
+          <a
+          data-container="body"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="hover"
+          data-content="Het Dashboard Prestatie Indicatoren geeft inzicht in de prestaties van de operationele doelstellingen van de waterbeheerder."
+          href="http://kpi.sandbox.lizard.net/#/"><img class="img-circle" src="assets/kpi.png" alt="KPI" width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-2">
-          <a href="https://flevoland.lizard.net/nl/map/topography/point@52.3654,5.2003,13"><img class="img-circle" src="assets/lizard.png" alt="Lizard" width="140" height="140"></a>
+          <a
+          data-container="body"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="hover"
+          data-content="Het google maps voor het waterbeheer, waarin alle gemeentelijke data en informatie voor het waterbeheer is opgenomen."
+            href="https://flevoland.lizard.net/nl/map/topography/point@52.3654,5.2003,13"><img class="img-circle" src="assets/lizard.png" alt="Lizard" width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-2">
-          <a href="https://almere.klimaatatlas.net/"><img class="img-circle" src="assets/logo-klimaatatlas-bw.png" alt="Klimaatatlas" width="140" height="140"></a>
+          <a
+          data-container="body"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="hover"
+          data-content="Een digitale atlas met themakaarten over de klimaatbestendigheid van uw gemeente. Bij uitstek een ideaal communicatiemiddel binnen uw gemeentelijke organisatie, maar ook om burgers en bedrijven te informeren, motiveren en activeren. "
+          href="https://almere.klimaatatlas.net/"><img class="img-circle" src="assets/logo-klimaatatlas-bw.png" alt="Klimaatatlas" width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-2">
-          <a href="https://waterlabel.sandbox.lizard.net/"><img class="img-circle" src="assets/logo-waterlabel.png" alt="Waterlabel" width="140" height="140"></a>
+          <a
+          data-container="body"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="hover"
+          data-content=" Het Waterlabel is een communicatiemiddel om de invloed van dak en tuin op wateroverlast bij particulieren onder de aandacht te brengen. Het Waterlabel draagt bij aan de participatie van burgers en daarmee aan het terugdringen van de wateroverlast."
+          href="https://waterlabel.sandbox.lizard.net/"><img class="img-circle" src="assets/logo-waterlabel.png" alt="Waterlabel" width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-2">
-          <a href="https://uploadserver.lizard.net/accounts/login/?next=/"><img class="img-circle" src="assets/uploadserver.png" alt="Uploadserver" width="140" height="140"></a>
+          <a
+          data-container="body"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="hover"
+          data-content="Webapplicatie die het proces verzorgt vanaf de data inwinning "in het veld" tot aan de data oplevering op "kantoor".  Met de Uploadservice heeft u inzicht en controle op de voortgang, kwaliteit en wijzigingen van de data aanlevering. "
+          href="https://uploadserver.lizard.net/accounts/login/?next=/"><img class="img-circle" src="assets/uploadserver.png" alt="Uploadserver" width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-2">
-          <a href="http://lizard4.almere.lizard.net/fancy/map/" target="_blank"><img class="img-circle" src="assets/L4.png" alt="Lizard 4" width="140" height="140"></a>
+          <a
+          data-container="body"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-trigger="hover"
+          data-content="Webapplicatie die de verloren berging in het rioolsysteem berekend. En een overzichtskaart van alle watergangen, duikers en waterloopprofielen. "
+          href="http://lizard4.almere.lizard.net/fancy/map/" target="_blank"><img class="img-circle" src="assets/L4.png" alt="Lizard 4" width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
   </div>
@@ -70,6 +114,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+    $(document).on('ready', function() {
+      $('a').popover();
+    });
 
+    </script>
   </body>
 </html>
